@@ -8,7 +8,7 @@ import app from "./app.js";
 connectdb()
 .then(()=>{
     app.listen(process.env.PORT || 8000 , ()=>{
-        console.log(`app running on ${process.env.PORT}`);
+        console.log(`app running on http://localhost:${process.env.PORT}`);
     })
 })
 .catch((err)=>{
